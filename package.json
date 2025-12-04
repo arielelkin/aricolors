@@ -1,0 +1,19 @@
+{
+  "name": "aricolors",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/alvarobarril.js",
+  "types": "dist/alvarobarril.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test -r ts-node/register"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
