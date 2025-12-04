@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-import type { Color } from "./src/alvarobarril";
-import { alvarobarrilColors } from "./src/alvarobarril";
+import type { Color } from "../src/alvarobarril";
+import { alvarobarrilColors } from "../src/alvarobarril";
 
 Error.stackTraceLimit = 0;
 
@@ -35,7 +35,9 @@ function parseGpl(filePath: string): Color[] {
 }
 
 const main = () => {
-  const gplColors = parseGpl(path.join(__dirname, "src", "vilaralbaro.gpl"));
+  const gplColors = parseGpl(
+    path.join(__dirname, "..", "src", "vilaralbaro.gpl")
+  );
 
   if (gplColors.length !== alvarobarrilColors.length) {
     throw new Error(
